@@ -207,6 +207,14 @@ pub use saved_model::*;
 #[cfg(feature = "eager")]
 pub mod eager;
 
+// TODO (pavignol): Re-enable me
+// #[cfg(feature = "stream_executor")]
+pub mod stream_executor;
+
+// TODO (pavignol): Re-enable me
+// #[cfg(feature = "kernels")]
+pub mod kernels;
+
 #[cfg(feature = "tensorflow_runtime_linking")]
 pub use tf::library;
 

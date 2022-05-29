@@ -36,6 +36,8 @@ zip = "0.5.13"
 [features]
 tensorflow_gpu = []
 eager = []
+stream_executor = []
+kernels = []
 runtime_linking = ["lazy_static", "libloading", "cfg-if", "log"]
 # This is for testing purposes; users should not use this.
 examples_system_alloc = []

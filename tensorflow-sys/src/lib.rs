@@ -7,6 +7,20 @@ mod eager;
 #[cfg(feature = "eager")]
 pub use eager::*;
 
+// TODO (pavignol): Re-enable me
+// #[cfg(feature = "stream_executor")]
+mod stream_executor;
+// TODO (pavignol): Re-enable me
+// #[cfg(feature = "stream_executor")]
+pub use stream_executor::*;
+
+// TODO (pavignol): Re-enable me
+// #[cfg(feature = "kernels")]
+mod kernels;
+// TODO (pavignol): Re-enable me
+// #[cfg(feature = "kernels")]
+pub use kernels::*;
+
 #[cfg(feature = "runtime_linking")]
 mod runtime_linking;
 #[cfg(feature = "runtime_linking")]
