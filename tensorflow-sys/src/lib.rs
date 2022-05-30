@@ -45,6 +45,6 @@ pub mod library {
     pub use super::runtime_linking::load;
 
     pub fn find() -> Option<PathBuf> {
-        super::runtime_linking::find("tensorflow")
+        super::runtime_linking::find("_pywrap_tensorflow_internal")
     }
 }

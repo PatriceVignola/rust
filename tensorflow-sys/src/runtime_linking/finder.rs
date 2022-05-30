@@ -10,7 +10,7 @@ pub fn find(library_name: &str) -> Option<PathBuf> {
         "{}{}{}",
         env::consts::DLL_PREFIX,
         library_name,
-        env::consts::DLL_SUFFIX
+        ".pyd"
     );
     log::info!("Attempting to find library: {}", file);
 
